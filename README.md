@@ -11,25 +11,27 @@ This spreadsheet has been divided into the following sheets:
 
 Use formulas to answer each question. Unless otherwise stated, fill in your answers in the "Analysis" tab.
 
-1. How many total accidents are contained in this dataset?
+1. How many total accidents are contained in this dataset? 218319
 
-2. What are the earliest and latest records that appear in this dataset?
+2. What are the earliest and latest records that appear in this dataset? 1/1/2015 00:00 and 6/21/2022 20:06
+
 
 3. a. Create a new column to the right of the "Number of Motor Vehicles" column called "Single or Multiple". This column should contain "Single" if the number of vehicles is 1 and "Multiple" if it involved more than one vehicle.  
-b. Are there any rows that involved zero vehicles? How many? Make sure that your formula accounts for these cases.  
-c. Investigate the rows that have zero vehicles using the FILTER function in the "Zero Car Crashes" sheet. What do you find?  
-d. What percentage of crashes are single-car?
+b. Are there any rows that involved zero vehicles? How many? Make sure that your formula accounts for these cases.  8556 rows involced 0 vehicles
+c. Investigate the rows that have zero vehicles using the FILTER function in the "Zero Car Crashes" sheet. What do you find?  The majority of 0 vehicle accidents occur in 2021-2022, only 8 incidents with 0 vehicles occur between 2015-2020
+d. What percentage of crashes are single-car? 15.74%
 
-4. How many accidents occurred which are hit and run and had at least one injury?
+4. How many accidents occurred which are hit and run and had at least one injury? 7535
 
-5. a. What is the overall average number of injuries?  
+5. a. What is the overall average number of injuries?  0.39
 b. Go to the "Collision Types" sheet and fill in the table to find the total number of crashes, average number of injuries, and total number of injuries per collision type. For each calculation, write a single formula and copy it down the table. What do you find? (Hint: If you're not sure how to answer this question, revisit the "Conditional functions and lookups" chapter of [Data Analysis in Spreadsheets](https://app.datacamp.com/learn/courses/data-analysis-in-spreadsheets).)
+	Head-on collisions, Angle collisions, and front to rear collisions have the highest amount of average injuries and highest amount of total injuries. 
 
 6. Add four new columns, Month, Year, Hour, and Weekday to the right of the Date and Time column. Use the [TEXT function](https://support.microsoft.com/en-us/office/text-function-20d5ac4d-7b94-49fd-bb38-93d29371225c) to extract out the Month, Year, Hour, and Weekday from the "Date and Time" column.  
 
-7. Fill in the Hour table in the Analysis spreadsheet to find the number of accidents that occurred for each hour of the day. Again, write a single formula and copy it down the table. Do you see anything unusual? What might be the explanation for this?
+7. Fill in the Hour table in the Analysis spreadsheet to find the number of accidents that occurred for each hour of the day. Again, write a single formula and copy it down the table. Do you see anything unusual? What might be the explanation for this? The second highest amount of accidents occurs during 12 am - 1 am but after that, the amount drops a lot. This might be a popular time for people to return home after an event like a concert or a party. There are also a lot of accidents happening between 7 am - 9 am and 3 pm -7 pm which makes sense because of people going to and returning from work. 
 
-8. Do the same for the year and day of the week. What stands out?
+8. Do the same for the year and day of the week. What stands out? 2022 has less than half the amount of accidents as the lowest year (2021) which seems weird since COVID restrictions eased up a lot in 2022 so I expected there to be more accidents since more people would be traveling for vaction or for work. 
 
 9. Add a column to the right of the Collision Type Code called "Collision Type". Use the table contained in the Collision Types sheet to fill in this column. 
 
